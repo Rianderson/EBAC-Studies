@@ -1,2 +1,4 @@
 # EBAC-Studies
-Aqui será depositado todos os execícios realizados no curso de Javascript da EBAC (Escola Britânica de Artes &amp; Tecnologia ). 
+
+O repositório EBAC -Studies será uma jornada que irá mostrar a evolução dos meus conhecimentos
+aplicados nos exercícos do  curso de Javascript..
