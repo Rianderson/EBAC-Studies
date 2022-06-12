@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exercícios</title>
+
+</head>
+
+<style>
+    body
+    {
+        align-items: center;
+        font-size: small;
+    }
+    Travels{justify-content: space-between;}
+</style>
+
+<body>
+
+    <h1>1. Descreva um Algoritmo para resolver o problema da travessia de modo "seguro":</h1>
+
+    <p id="Rules">Um homem precisa atravessar um rio com um barco que possui capacidade
+        apenas para carregar ele mesmo e um de seus três pertences que são:
+        um lobo, uma cabra e um maço de alfafa. <br><br>
+        Em cada viagem só poderá ir o homem e apenas um de seus pertences. <br>
+        <strong>REGRA: o lobo não pode ficar sozinho com a cabra
+        e a cabra não pode ficar sozinha com a alfafa..</strong></p>
+
+    <br>
+
+    <h2><strong>Resposta:</strong></h2>
+
+    <p id="Travels"></p>
+
+    <h2><strong>Explicação:</strong><br></h2>
+    <p>A cabra é a chave para a solução por ser a personagem mais crítica,
+    tanto pode ser comida (pelo lobo) quanto pode comer (o repolho).</p>
+
+<script type="text/javascript" >
+
+const moviment_of_farmer = 
+[
+     "Levou a Cabra", 
+     "Voltou sozinho", 
+     "Levou a Alfafa",
+     "Voltou com a Cabra",
+     "Levou o Lobo",
+     "Voltou sozinho",
+     "Levou a Cabra",
+     "Atravessou com todos os seus pertences.."
+    
+]; 
+
+let text = "";
+for (let i = 0; i < moviment_of_farmer.length; i++) {text += moviment_of_farmer[i] + "<br>";}
+
+document.getElementById("Travels").innerHTML = text;
+
+
+</script>
+
+</body>
+</html>
